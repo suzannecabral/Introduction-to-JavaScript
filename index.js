@@ -1,15 +1,18 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
- const votingAge = 18;
+console.log('#1a Voting Age Check:');
+ const votingAge = 21;
  
- if(votingAge>18){
+ if(votingAge >= 18){
      console.log('True');
  }
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+
+console.log('#1b Variable conditional:');
 
 let weather = 'warm' ;
 let temperature = 82;
@@ -26,13 +29,14 @@ console.log(weather);
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-
+console.log('#1c String to Number:');
 const stringConvert = parseInt("1999",10);
 console.log(stringConvert);
 
 
 //Task d: Write a function to multiply a*b 
 
+console.log('#1d Multiplication:');
 function multiply(a,b){
     console.log(a*b);
 }
@@ -44,7 +48,13 @@ multiply(5,10);
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+console.log('#2 Dog Years function:');
+function dogYears(){
+    const myAge = 32;
+    console.log(myAge*7);
+}
 
+dogYears();
 
 
 
@@ -67,7 +77,54 @@ multiply(5,10);
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
 
+function dogFeeder(age,weight){
+    console.log('Dog Feeder Function:');
+    age=.25;
+    weight=30;
+    if(age >= 1){
+        //if adult (older than 1 year)
+        if(weight <= 5){
+            //if less or equal to 5lbs
+            console.log(weight * .05);
+        }
+        if(weight > 5 && weight <=10 ){
+            //if 6-10lbs
+            console.log(weight * .04);
 
+        }
+        if(weight >= 11 && weight <= 15){
+            //if 11-15lbs
+            console.log(weight * .03);
+        }
+        else{
+            //if over 15lbs
+            console.log(weight * .02);
+        }
+        
+
+    }  
+    else {
+        //if puppy (less than 1 year)
+        if(age >= (2/12) && age < (4/12)){
+            // 1f age is 2-4mos
+            console.log(weight * .1);
+        }
+        if(age >= (4/12) && age < (7/12)){
+            //if age is 4-7mos
+            console.log(weight * .05);
+        }
+        if(age >= (7/12) && age < 1){
+            //if age is 7-12mos
+            console.log(weight * .04);
+            
+        }
+        if (age < (2/12)){
+            console.log('Please enter an age above 2 months');
+        }
+        
+    } 
+}
+dogFeeder(1,15);
 
 
 /************************************************************** Task 4 **************************************************************/
@@ -78,20 +135,20 @@ multiply(5,10);
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
   
-  
+  console.log('#4 Rock Paper Scissors:');
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
+//console.log('#5a Metric Converter:');
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
 
-
+//console.log('#5b Feet to CM:');
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -99,7 +156,7 @@ multiply(5,10);
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-
+//console.log('#6 99 Bottles:');
 
 
 
@@ -112,7 +169,7 @@ multiply(5,10);
 //60s should be D 
 //and anything below 60 should be F
   
-
+//console.log('#7 Task Grade Calculator:');
   
   
 
@@ -121,7 +178,7 @@ multiply(5,10);
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-
+//console.log('Stretch 1: Vowel Counter:');
 
 
 
@@ -129,7 +186,7 @@ multiply(5,10);
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
-
+//console.log('Stretch 2: Rock Paper Scissors Prompt:');
 
 
 
