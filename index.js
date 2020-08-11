@@ -214,11 +214,11 @@ RockPaperScissors("rock","scissors");
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-console.log(`#6 99 Bottles:`);
+console.log(`#6 Annoying Song:`);
 
 function annoyingSong(){
 
-    for(let i = 99; i > 0; i--) {
+    for(let i = 5; i > 0; i--) {
         console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down, pass it around, ${i-1} more bottles of soda on the wall.`);
     }
 }
@@ -235,8 +235,29 @@ annoyingSong();
 //60s should be D 
 //and anything below 60 should be F
   
-//console.log('#7 Task Grade Calculator:');
+console.log('#7 Task Grade Calculator:');
+
+function gradeCalculator(grade,gradeLetter){
+    if(grade <= 100 && grade >= 90 ){
+    gradeLetter = `A`;
+    }
+    else if(grade < 90 && grade >= 80){
+        gradeLetter = `B`;
+    }
+    else if(grade < 80 && grade >= 70){
+        gradeLetter = `C`;
+    }
+    else if(grade < 70 && grade >= 60){
+        gradeLetter = `D`;
+    }
+    else {
+        gradeLetter = `F`;
+    }
+
+    console.log(gradeLetter);
+}
   
+gradeCalculator(75);
   
 
 /************************************************************** Stretch **************************************************************/
