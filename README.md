@@ -28,20 +28,22 @@ Exercises are outlined in the `index.js` file, please read the instructions care
 
 Using VSCode and Command Line:
 
-1. Fork repo and add TL as collaborator on Github.
-2. Clone your fork (not Lambda's repo by mistake!).
-3. `cd` into your newly cloned repository.
-4. Create a new branch by typing `git checkout -b <firstName-lastName>`.
+- [x] 1. Fork repo and add TL as collaborator on Github.
+- [x] 2. Clone your fork (not Lambda's repo by mistake!).
+- [x] 3. `cd` into your newly cloned repository.
+- [x] 4. Create a new branch by typing `git checkout -b <firstName-lastName>`.
 
 ### Task 2: Complete MVP Requirements
 
 Find the `index.js` file and complete the tasks as written. 
 
+- [ ] Task 1-7
+
 As you work on your code you should make use of `console.log` to check your progress and debug.
 
 ### Task 2b: Exit Ticket
 
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/pi7Q49mgrZbodiRzM/aXzit9h4ZRp3Si)
+- [x] Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/pi7Q49mgrZbodiRzM/aXzit9h4ZRp3Si)
 
 The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
 
@@ -55,8 +57,8 @@ After you have completed the requirements, try any of the following challenges. 
 
 Follow these steps for completing your project.
 
-1. [ ] Submit a pull request to merge `<firstName-lastName>` branch into master. **Please don't merge your own pull request**
-2. [ ] Add your TL as a reviewer on the pull-request
+1. [x] Submit a pull request to merge `<firstName-lastName>` branch into master. **Please don't merge your own pull request**
+2. [x] Add your TL as a reviewer on the pull-request
 3. [ ] Your TL will count the project as complete by merging the branch back into master
 
 ## Resources
