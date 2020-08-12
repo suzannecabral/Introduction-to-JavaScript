@@ -1,7 +1,7 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-
-console.log(`#1a Voting Age Check:`);
+console.log(`--------#1 Warm-up--------`);
+console.log(`Voting Age Check:`);
  const votingAge = 21;
  
  if(votingAge >= 18){
@@ -12,7 +12,7 @@ console.log(`#1a Voting Age Check:`);
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-console.log(`#1b Variable conditional:`);
+console.log(`Variable conditional:`);
 
 let weather = `warm` ;
 let temperature = 82;
@@ -29,14 +29,14 @@ console.log(weather);
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-console.log('#1c String to Number:');
+console.log('String to Number:');
 const stringConvert = parseInt("1999",10);
 console.log(stringConvert);
 
 
 //Task d: Write a function to multiply a*b 
 
-console.log(`#1d Multiplication:`);
+console.log(`Multiplication:`);
 function multiply(a,b){
     console.log(a*b);
 }
@@ -48,7 +48,7 @@ multiply(5,10);
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-console.log(`#2 Dog Years:`);
+console.log(`--------#2 Dog Years--------`);
 function dogYears(){
     const myAge = 32;
     console.log(myAge*7);
@@ -75,7 +75,7 @@ dogYears();
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-console.log(`#3 Dog Feeder:`);
+console.log(`--------#3 Dog Feeder--------`);
 
 function dogFeeder(age,weight){
     
@@ -137,6 +137,28 @@ dogFeeder(1,15);
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
 
+   console.log(`--------#4 Rock Paper Scissors--------`);
+/*
+function RockPaperScissors(myChoiceString,computerChoiceString){
+    
+
+    function choiceStringToNum(choiceString){
+        
+    }
+
+
+    if(myChoiceNum > computerChoiceNum){
+        console.log('I win!');
+    }
+    else {
+        console.log('Computer wins!');
+    }
+}
+
+RockPaperScissors("rock","scissors");
+*/
+
+
 /*
 
 ok rock paper scissors notes.
@@ -165,105 +187,99 @@ same is tie
 
 
 if a = b then tied
+*/
+
 
 ///////////////////////////////////// demo standup
 
 
 
+// //input user choice of rock paper scissors
 
-*/
+// function rockPaperScissors(userChoice){
+// //generate a computer choice
+//     console.log(`Key: Rock(1) Paper(2) Scissors(3)`);
+//     let computerChoice = "(COMPUTER STRING IS WRONG)";
 
-  console.log(`#4 Rock Paper Scissors:`);
+//     const computerChoiceNum = Math.floor(Math.random()*3) + 1;
+//     //returns a random number btn 0 and 1
+//     console.log(`Computer number: ${computerChoiceNum}`);
 
-//input user choice of rock paper scissors
+//     if(computerChoiceNum === 1){
+//         ComputerChoice = `Rock`;
+//         return `Rock`;
+//     }
+//     else if(computerChoiceNum === 2){
+//         computerChoice = `Paper`;
+//         return `Paper`;
+//     }
+//     else if(computerChoiceNum === 3){
+//         computerChoice = `Scissors`;
+//         return `Scissors`;
+//     }
 
-function rockPaperScissors(userChoice){
-//generate a computer choice
-    
-    const computerChoiceNum = Math.floor(Math.random()*3) + 1;
-    //returns a random number btn 0 and 1
-    let computerChoice = "string";
-
-    if(computerChoiceNum === 1){
-        ComputerChoice = `Rock`;
-        console.log(`The Computer chose Rock (1)`);
-    }
-    else if(computerChoiceNum === 2){
-        computerChoice = `Paper`;
-        console.log(`The Computer chose Paper (2)`);
-    }
-    else if(computerChoiceNum === 3){
-        console.log(`The Computer chose Scissors (3)`);
-        computerChoice = `Paper`;
-    }
-
+//     console.log(`Computer string: ${computerChoice}`);
 
 
 
+//     var userChoiceNum = 0;
+//     //assign userChoice to a number based on rock paper scissors
+//     // 0.00-0.33, 0.34-0.66, 0.67-1.00
 
-    var userChoiceNum = 0;
-    //assign userChoice to a number based on rock paper scissors
-    // 0.00-0.33, 0.34-0.66, 0.67-1.00
+//     if(userChoice === `Rock`){
+//         userChoiceNum = 1;
+//         return 1;
+//     }
+//     else if(userChoice === `Paper`){
+//         userChoiceNum = 2;
+//         return 2;
+//     }
+//     else if(userChoice === `Scissors`){
+//         userChoiceNum = 3;
+//         return 3;
+//     }
+//     console.log(`user choice string: ${userChoice}`);
+//     console.log(`user choice number: ${userChoiceNum}`);
 
-    if(userChoice === `rock`){
-        userChoiceNum = 1;
-        console.log(`You chose Rock (1)`);
-    }
-    else if(userChoice === `paper`){
-        userChoiceNum = 2;
-        console.log(`You chose Paper (2)`);
-    }
-    else if(userChoice === `scissors`){
-        console.log(`You chose Scissors (3)`);
-        userChoiceNum = 3;
-    }
-//assign numeric value to rock, paper and scissors
+// //assign numeric value to rock, paper and scissors
 
-//compare the numbers - comp vs your choice
-// tie: numbers are equal
+// //compare the numbers - comp vs your choice
+// // tie: numbers are equal
 
-if(computerChoiceNum === userChoiceNum){
-    console.log(`Yay, a tie...`);
-
-
-
-}
-else if(computerChoiceNum === 3 && userChoice === 1){
-
-}
-
-else if(computerChoiceNum === 1 && userChoice === 3){
-
-}
-else if (computerChoiceNum < userChoiceNum){
-    console.log(`You LOSE!`);
-}
-else{
-    console.log(`You WIN!`);
-}
-    //check if 1 beats 3
-
-
-    //check both, larger # wins
-
-
-//define rules: 
-//    win/lose rule
-//    tie rule
-
-//translate it to a printout
-}
+// if(computerChoiceNum === userChoiceNum){
+//     console.log(`Yay, a tie...`);
 
 
 
+// }
+// else if(computerChoiceNum === 3 && userChoice === 1){
 
-rockPaperScissors(`rock`);
+// }
+
+// else if(computerChoiceNum === 1 && userChoice === 3){
+
+// }
+// else if (computerChoiceNum < userChoiceNum){
+//     console.log(`You LOSE!`);
+// }
+// else{
+//     console.log(`You WIN!`);
+// }
+//     //check if 1 beats 3
 
 
+//     //check both, larger # wins
 
 
+// //define rules: 
+// //    win/lose rule
+// //    tie rule
+
+// //translate it to a printout
+// }
 
 
+// rockPaperScissors(`scissors`);
 // use the math.random as a dice roll, like a roll on a random table
 
 
@@ -271,25 +287,30 @@ rockPaperScissors(`rock`);
 
 
 
-/*
-function RockPaperScissors(myChoiceString,computerChoiceString){
-    
+//=============================
+// Rock Paper Scissors: Try 2
+//=============================
 
-    function choiceStringToNum(choiceString){
-        
-    }
+//  1. Input user choice (string)
+//  2. Generate computer choice (number)
+//  3. Convert user choice to number
+//  4. Compare numbers
+//      5. Rule: highest wins
+//      6. Rule: except rock vs paper
+//  7. Print Winner
+
+//alternatively: use the math.random as a dice roll, like a roll on a random table
 
 
-    if(myChoiceNum > computerChoiceNum){
-        console.log('I win!');
-    }
-    else {
-        console.log('Computer wins!');
-    }
-}
 
-RockPaperScissors("rock","scissors");
-*/
+
+
+
+
+
+
+
+
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
@@ -310,7 +331,7 @@ RockPaperScissors("rock","scissors");
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-console.log(`#6 Annoying Song:`);
+console.log(`--------#6 Annoying Song--------`);
 
 function annoyingSong(){
 
@@ -331,7 +352,7 @@ annoyingSong();
 //60s should be D 
 //and anything below 60 should be F
   
-console.log('#7 Task Grade Calculator:');
+console.log('--------#7 Task Grade Calculator--------');
 
 function gradeCalculator(grade,gradeLetter){
     if(grade <= 100 && grade >= 90 ){
