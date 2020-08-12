@@ -302,7 +302,47 @@ if a = b then tied
 //alternatively: use the math.random as a dice roll, like a roll on a random table
 
 
+function rpsGame2(userString){
+    //initialize userNum
+    let userNum = 100;
+    
+    //TEST PRINT USER CHOICES------
+    console.log(`userString: ${userString}`);
+    console.log(`userNum: ${userNum}`);
+    //----------------------
 
+    //assign user number values
+    if(userString === `Rock`){
+        userNum = 1;
+        console.log(`[${userNum}] you chose rock...`);
+    }else if(userString === `Paper`){
+        userNum = 2;
+        console.log(`[${userNum}] you chose paper...`);
+    }
+    else if(userString === `Scissors`){
+        userNum = 3;
+        console.log(`[${userNum}] you chose scissors...`);
+    }
+    else {
+        console.log(`you chose... what?`);
+    }
+
+    //initialize computer num & string
+    let compString = `COMPUTER IS WRONG`;
+    let compNum = 100;
+
+
+
+
+    // TEST PRINT COMP CHOICES------
+    console.log(`compString: ${compString}`);
+    console.log(`compNum: ${compNum}`);
+    //----------------------
+
+}
+
+
+rpsGame2(`Rock`);
 
 
 
