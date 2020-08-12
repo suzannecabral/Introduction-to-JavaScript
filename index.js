@@ -439,7 +439,7 @@ annoyingSong(7);
 //60s should be D 
 //and anything below 60 should be F
   
-console.log('--------#7 Task Grade Calculator--------');
+console.log(`--------#7 Task Grade Calculator--------`);
 
 function gradeCalculator(grade,gradeLetter){
     if(grade <= 100 && grade >= 90 ){
@@ -469,15 +469,42 @@ gradeCalculator(75);
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-//console.log('Stretch 1: Vowel Counter:');
+console.log(`--------Stretch 1: Vowel Counter--------`);
+
+function countVowels(userString){
+    //test user input
+    console.log(`userString: ${userString}`);
+
+    //define list of vowels
+    const vowels = [`a`,`e`,`i`,`o`,`u`,`A`,`E`,`I`,`O`,`U`];
+    console.log(`Vowels: ${vowels}`);
+
+    //convert string to array
+    const userArray = userString.split(``);
+    console.log(`userArray: ${userArray}`);
+
+    //find vowels in input string
+    
+    //// check:
+    // const arrayCheck = userArray.includes(`o`);
+    //console.log(`arrayCheck: ${arrayCheck}`);
+    //// ^^ this check worked, finding matching characters in either array
+    
+
+    //next step: iterating function to count number of matches from userArray to vowels 
+    // function(){
+
+    // }
 
 
+}
+countVowels(`Windows`);
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
-//console.log('Stretch 2: Rock Paper Scissors Prompt:');
+console.log(`--------Stretch 2: Rock Paper Scissors Prompt--------`);
 
 
 
