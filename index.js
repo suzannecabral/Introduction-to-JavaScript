@@ -390,16 +390,27 @@ rpsGame2(`Rock`);
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
+
+console.log('--------#5 Unit Converter--------');
+
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-//console.log('#5a Metric Converter:');
+console.log(`KM to Miles:`);
 
+function kmConvert(kmLength){
+    console.log((kmLength/1.609).toFixed(3));
+}
+kmConvert(10);
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
 
-//console.log('#5b Feet to CM:');
+console.log(`Feet to CM:`);
+  
+function ftConvert(ftLength){
+    console.log((ftLength*30.48).toFixed(2));
+}
+ftConvert(7);
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -409,14 +420,14 @@ rpsGame2(`Rock`);
   
 console.log(`--------#6 Annoying Song--------`);
 
-function annoyingSong(){
+function annoyingSong(useri){
 
-    for(let i = 5; i > 0; i--) {
+    for(i = useri; i > 0; i--) {
         console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down, pass it around, ${i-1} more bottles of soda on the wall.`);
     }
 }
 
-annoyingSong();
+annoyingSong(7);
 
 
 /************************************************************** Task 7 **************************************************************/
