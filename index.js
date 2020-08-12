@@ -314,6 +314,7 @@ function rpsGame2(userString){
     //----------------------
 
     //assign number values to user choice string
+   // if(userString.toLowerCase() === `rock`){
     if(userString === `Rock`){
         userNum = 1;
         console.log(`[${userNum}] you chose rock...`);
@@ -385,7 +386,7 @@ function rpsGame2(userString){
 
 }
 
-rpsGame2(`Rock`);
+rpsGame2(`Scissors`);
 
 
 /************************************************************** Task 5 **************************************************************/
@@ -427,7 +428,7 @@ function annoyingSong(useri){
     }
 }
 
-annoyingSong(7);
+annoyingSong(99);
 
 
 /************************************************************** Task 7 **************************************************************/
@@ -552,4 +553,5 @@ function rpsGame2Prompt(promptValue){
 }
 rpsGame2Prompt();
 
-
+// case sensitive:
+// in comparison
