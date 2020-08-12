@@ -166,6 +166,7 @@ same is tie
 
 if a = b then tied
 
+///////////////////////////////////// demo standup
 
 
 
@@ -173,6 +174,101 @@ if a = b then tied
 */
 
   console.log(`#4 Rock Paper Scissors:`);
+
+//input user choice of rock paper scissors
+
+function rockPaperScissors(userChoice){
+//generate a computer choice
+    
+    const computerChoiceNum = Math.floor(Math.random()*3) + 1;
+    //returns a random number btn 0 and 1
+    let computerChoice = "string";
+
+    if(computerChoiceNum === 1){
+        ComputerChoice = `Rock`;
+        console.log(`The Computer chose Rock (1)`);
+    }
+    else if(computerChoiceNum === 2){
+        computerChoice = `Paper`;
+        console.log(`The Computer chose Paper (2)`);
+    }
+    else if(computerChoiceNum === 3){
+        console.log(`The Computer chose Scissors (3)`);
+        computerChoice = `Paper`;
+    }
+
+
+
+
+
+    var userChoiceNum = 0;
+    //assign userChoice to a number based on rock paper scissors
+    // 0.00-0.33, 0.34-0.66, 0.67-1.00
+
+    if(userChoice === `rock`){
+        userChoiceNum = 1;
+        console.log(`You chose Rock (1)`);
+    }
+    else if(userChoice === `paper`){
+        userChoiceNum = 2;
+        console.log(`You chose Paper (2)`);
+    }
+    else if(userChoice === `scissors`){
+        console.log(`You chose Scissors (3)`);
+        userChoiceNum = 3;
+    }
+//assign numeric value to rock, paper and scissors
+
+//compare the numbers - comp vs your choice
+// tie: numbers are equal
+
+if(computerChoiceNum === userChoiceNum){
+    console.log(`Yay, a tie...`);
+
+
+
+}
+else if(computerChoiceNum === 3 && userChoice === 1){
+
+}
+
+else if(computerChoiceNum === 1 && userChoice === 3){
+
+}
+else if (computerChoiceNum < userChoiceNum){
+    console.log(`You LOSE!`);
+}
+else{
+    console.log(`You WIN!`);
+}
+    //check if 1 beats 3
+
+
+    //check both, larger # wins
+
+
+//define rules: 
+//    win/lose rule
+//    tie rule
+
+//translate it to a printout
+}
+
+
+
+
+rockPaperScissors(`rock`);
+
+
+
+
+
+
+// use the math.random as a dice roll, like a roll on a random table
+
+
+
+
 
 
 /*
