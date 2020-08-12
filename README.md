@@ -37,7 +37,7 @@ Using VSCode and Command Line:
 
 Find the `index.js` file and complete the tasks as written. 
 
-- [ ] Task 1-7
+- [x] Task 1-7
 
 As you work on your code you should make use of `console.log` to check your progress and debug.
 
@@ -51,7 +51,7 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 After you have completed the requirements, try any of the following challenges. As always, note that these may require additional research beyond what you learned in this module.
 
-- [ ] See tasks labelled stretch. Please ensure you've completed MVP before you attempt the stretch goals. Note that you may need to look forward to tomorrow's training kit in order to complete the task. 
+- [x] See tasks labelled stretch. Please ensure you've completed MVP before you attempt the stretch goals. Note that you may need to look forward to tomorrow's training kit in order to complete the task. 
 
 ## Submission format
 

@@ -307,7 +307,7 @@ function rpsGame2(userString){
     let userNum = 9000;
     
     //TEST PRINT USER CHOICES------
-    // console.log(`Key: [1]Rock [2]Paper [3]Scissors`);
+    console.log(`Key: [1]Rock [2]Paper [3]Scissors`);
 
     // console.log(`userString: ${userString}`);
     // console.log(`userNum: ${userNum}`);
@@ -477,11 +477,11 @@ function countVowels(userString){
 
     //define list of vowels
     const vowels = [`a`,`e`,`i`,`o`,`u`,`A`,`E`,`I`,`O`,`U`];
-    console.log(`Vowels: ${vowels}`);
+    //console.log(`Vowels: ${vowels}`);
 
     //convert string to array
     const userArray = userString.split(``);
-    console.log(`userArray: ${userArray}`);
+    //console.log(`userArray: ${userArray}`);
 
     //find vowels in input string
     
@@ -492,13 +492,52 @@ function countVowels(userString){
     
 
     //next step: iterating function to count number of matches from userArray to vowels 
-    // function(){
+    function countVowelMatches(x,index){
+        //console.log(`userArray length: ${userArray.length}`);
+        //let matchCount = 9000;
 
-    // }
+        let matchCount = 0;
+        let matchChar = 9000;
+        
+        //console.log(`matchCount before: ${matchCount}`);
+        
+        //userArray.length-1 = last character
 
+        //let testSlice = userArray.slice(userArray.length-1);
+        //console.log(`userArray Slice: ${testSlice}`);
+        //console.log(`test array index: ${userArray[1]}`);
+
+        //console.log(`userArray[userArray.length-1] ${userArray[userArray.length-1]}`);
+      
+        //console.log(`userArray[4] ${userArray[4]}`);
+        //console.log(`vowels.includes(userArray[4]) ${vowels.includes(userArray[4])}`);
+
+        for(i = userArray.length; i > 0; i--){
+                //search vowels for userArray letter indexed: length-i-1
+
+            if(vowels.includes(userArray[i-1])){    
+                //if(vowels.includes(userArray[userArray.length-1])){
+                //matchChar=userArray.length-i-1;
+                //const vowelFound = vowels.includes(userArray[matchChar]);
+
+                // if( * userArray @ matchChar * .includes( * anything from the vowels list *)){
+                //if match is found:
+                matchCount ++;
+
+                //console.log(`userArray[i-1] ${userArray[i-1]}`);
+                //console.log(`matchCount during: ${matchCount}`);
+            }
+        }
+
+
+        
+        console.log(`Vowels Counted: ${matchCount}`);
+    }
+
+    countVowelMatches();
 
 }
-countVowels(`Windows`);
+countVowels(`Words go Here`);
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
@@ -506,5 +545,11 @@ countVowels(`Windows`);
 
 console.log(`--------Stretch 2: Rock Paper Scissors Prompt--------`);
 
+function rpsGame2Prompt(promptValue){
+    console.log(`Rock Paper Scissors: Type your selection to continue!`);
+    promptValue = window.prompt(`Pick one:`,`Rock, Paper or Scissors`);
+    rpsGame2(promptValue);
+}
+rpsGame2Prompt();
 
 
