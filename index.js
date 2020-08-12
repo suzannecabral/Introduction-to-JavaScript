@@ -304,14 +304,16 @@ if a = b then tied
 
 function rpsGame2(userString){
     //initialize userNum
-    let userNum = 100;
+    let userNum = 9000;
     
     //TEST PRINT USER CHOICES------
-    console.log(`userString: ${userString}`);
-    console.log(`userNum: ${userNum}`);
+    // console.log(`Key: [1]Rock [2]Paper [3]Scissors`);
+
+    // console.log(`userString: ${userString}`);
+    // console.log(`userNum: ${userNum}`);
     //----------------------
 
-    //assign user number values
+    //assign number values to user choice string
     if(userString === `Rock`){
         userNum = 1;
         console.log(`[${userNum}] you chose rock...`);
@@ -328,28 +330,62 @@ function rpsGame2(userString){
     }
 
     //initialize computer num & string
-    let compString = `COMPUTER IS WRONG`;
-    let compNum = 100;
+    let compString = `COMP STRING IS WRONG`;
+    let compNum = Math.floor(Math.random()*3)+1;
+
+// is it random?
+//    1 x16
+//    2 x23
+//    3 x18
 
 
-
+    // Assign string to comp choice number
+    if(compNum === 1){
+        compString = `Rock`;
+        console.log(`[${compNum}] comp chose rock...`);
+    }
+    else if(compNum === 2){
+        compString = `Paper`;
+        console.log(`[${compNum}] comp chose paper...`);
+    }
+    else if(compNum === 3){
+        compString = 'Scissors';
+        console.log(`[${compNum}] comp chose scissors...`);
+    }
+    else {
+        console.log(`comp chose...what?`);
+    }
 
     // TEST PRINT COMP CHOICES------
-    console.log(`compString: ${compString}`);
-    console.log(`compNum: ${compNum}`);
+    // console.log(`compString: ${compString}`);
+    // console.log(`compNum: ${compNum}`);
     //----------------------
+
+    //Compare using rules
+
+    if(userNum === compNum){
+        console.log(`u:[${userNum}] c:[${compNum}] It's a tie...`);
+    }
+    else if(userNum === 1 && compNum === 3){
+        console.log(`u:[${userNum}] c:[${compNum}] You win!`);
+    }
+    else if(userNum === 3 && compNum === 1){
+        console.log(`u:[${userNum}] c:[${compNum}] You lose.`);
+    }
+    else if(userNum > compNum){
+        console.log(`u:[${userNum}] c:[${compNum}] You win!`);
+    }
+    else if(compNum > userNum){
+        console.log(`u:[${userNum}] c:[${compNum}] You lose.`);
+    }
+    else{
+        console.log(`u:[${userNum}] c:[${compNum}] Outcome not defined...`);
+    }
+
 
 }
 
-
 rpsGame2(`Rock`);
-
-
-
-
-
-
-
 
 
 /************************************************************** Task 5 **************************************************************/
